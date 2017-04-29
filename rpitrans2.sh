@@ -38,7 +38,12 @@ echo "Copying new Atari 7800 Games..."
 
 rsync -avzh --progress "$SOURCE"/sega32x/* "$DEST"/roms/sega32x
 echo "Copying new Sega 32x Games..."
+sleep 5
 
-
+echo "Copying new Game Boy Color Games..."
+sleep 2
+rsync -avzh --progress "$SOURCE"/gbc/* "$DEST"/roms/gbc
 #Finishing Up
 echo "All Done, Time to Play!"
+
+#Well, here I am!
